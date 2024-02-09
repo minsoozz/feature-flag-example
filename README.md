@@ -1,36 +1,40 @@
-# 기능 플래그 API
+# feature flag
 
-이 API는 런타임 환경에서 특정 기능의 활성화 및 비활성화를 관리하기 위한 것입니다.
-
----
-
-#### 엔드포인트: POST /api/v1/feature-flag
-
-**요청 바디:**
-name: "string"
-
-- **name** (필수): 활성화 또는 비활성화할 기능의 이름을 지정합니다.
-
-**응답:**
-- 성공 시 200 OK를 반환합니다.
+런타임 환경에서 특정 기능의 활성화 및 비활성화를 관리할 수 있는 예제
 
 ---
 
-#### 엔드포인트: PUT /api/v1/feature-flag
+```
+GET /api/v1/feature-flag
+```
 
-**요청 바디:**
-name: "string"
+```
+POST /api/v1/feature-flag
+```
 
-- **name** (필수): 활성화할 기능의 이름을 지정합니다.
+> Request
 
-**응답:**
-- 성공 시 200 OK를 반환합니다.
+| 필드명 | 타입 | 설명 | 필수 여부
+| --- | --- | --- | --- |
+| name | String | 이름 | O | 
 
----
+```
+PUT /api/v1/feature-flag
+```
 
-#### 엔드포인트: DELETE /api/v1/feature-flag
+> Request
 
-**요청 바디:**
-name: "string"
+| 필드명 | 타입 | 설명 | 필수 여부
+| --- | --- | --- | --- |
+| name | String | 이름 | O | 
 
-- **name** (필수): 비활성화할 기능의 이름을 지정합니다.
+```
+DELETE /api/v1/feature-flag
+```
+
+> Request
+
+| 필드명 | 타입 | 설명 | 필수 여부
+| --- | --- | --- | --- |
+| name | String | 이름 | O | 
+
