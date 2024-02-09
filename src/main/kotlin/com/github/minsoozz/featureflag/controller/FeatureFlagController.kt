@@ -19,7 +19,6 @@ class FeatureFlagController(
 
     @PostMapping
     fun insert(@RequestBody featureFlagRequest: FeatureFlagRequest) {
-        println(featureFlagRequest.name)
         featureFlagService.insert(featureFlagRequest.name)
     }
 
