@@ -7,6 +7,11 @@
 ```
 GET /api/v1/feature-flag
 ```
+> Response
+
+| feature flag ON | feature flag OFF | 
+| --- | --- | 
+| 해당 서비스는 점검 중 입니다. | hello 
 
 ```
 POST /api/v1/feature-flag
